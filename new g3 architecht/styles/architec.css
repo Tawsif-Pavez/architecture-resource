@@ -68,7 +68,7 @@ header{
     display: flex;
     align-items: center;
   }
- .teams-img-container{
+  .teams-img-container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap:1.5rem;
@@ -94,7 +94,23 @@ header{
    header{
     padding: 20px;
    }
-   nav{
+   nav , .teams-container{
     flex-direction: column;
    }
+   .teams-content{
+    padding-right: 20px;
+    padding-left: 20px;
   }
+   .teams-img-container{
+    grid-template-columns: 1fr;
+   }
+  }
+  @media screen and (min-width:576px) and (max-width: 960px) {
+    header{
+      padding: 50px;
+    }
+    nav,.teams-container{
+      flex-direction: column;
+    }
+  }
+  
